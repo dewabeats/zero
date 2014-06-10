@@ -1,0 +1,96 @@
+#zero{
+    background-image: url(images/newSpriteSheet.png);
+    height: 60px;
+    width: 60px;
+    top: 120px;
+    left: 145px;
+    position: absolute;
+    border: 2px solid black;
+    
+    -webkit-animation : zero-finish 2s steps(11, end) 1;
+}
+@-webkit-keyframes zero-ready{
+    from{background-position: 0px 0px;}
+    to{background-position: -968px 0px;}
+    10%{
+        top: 90px;
+        height: 80px;
+    }
+    90%{
+        top: 100px;
+    }
+}
+@-webkit-keyframes zero-stand{
+    from{background-position: 0px -110px;}
+    to{background-position: -255px -109px;}
+}
+@-webkit-keyframes zero-jump-ascend{
+    from{background-position: 0px -200px;}
+    to{background-position: -580px -180px;}
+    
+    40%{
+        top: 110px;
+    }
+    
+    50%{
+        top: 105px;
+    }
+    
+    80%, 90%{
+        height: 80px;
+    }
+}
+@-webkit-keyframes zero-jump-descend-cont{
+    from{background-position: 0px -274px;}
+    to{background-position: -195px -274px;}
+    30%{
+        top: 105px;
+        height: 80px;
+    }
+    60%{
+        top: 110px;
+        height: 80px;
+    }
+    99%{
+        top: 115px;
+        height: 80px;
+    }
+}
+@-webkit-keyframes zero-jump-descend-fin{
+    from{background-position: 0px -388px;}
+    to{background-position: -255px -388px;}
+}
+@-webkit-keyframes zero-run{
+    from{background-position: -130px -488px;}
+    to{background-position: -1030px -488px;}
+}
+@-webkit-keyframes zero-attack1-1{
+    from{background-position: 0px -578px;}
+    to{background-position: -202px -578px;}
+}
+@-webkit-keyframes zero-attack1-2{
+    from{background-position: -202px -578px;}
+    to{background-position: -673px -578px;}
+    20%,40%,60%,80%,99%{
+        width: 85px;
+    }
+}
+@-webkit-keyframes zero-attack1-3{
+    from{background-position: -673px -578px;}
+    to{background-position: -1253px -578px;}
+}
+@-webkit-keyframes zero-dash{
+    from{background-position: 0px -875px;}
+    to{background-position: -710px -875px;}
+}
+@-webkit-keyframes zero-finish{
+    from{background-position: -8px -1141px;}
+    to{background-position: -710px -1141px;}
+    10%,20%, 30%, 40%, 50%, 60%, 70%, 75%, 80%{
+        height: 80px;
+        top: 145px;
+    }
+    90%, 99%{
+        top: 0px;
+    }
+}

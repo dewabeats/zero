@@ -1,0 +1,108 @@
+@-webkit-keyframes zero-ready{
+    from{background-position: 0px 0px;}
+    to{background-position: -965px 0px;}
+    1%{
+        top: 10px;
+        height: 80px;
+    }
+    
+    5%{
+        top: 50px;
+        height: 80px;
+    }
+    
+    90%{
+        top: 130px;
+    }
+    99%{
+        top:130px;
+    }
+}
+@-webkit-keyframes zero-stand{
+    from{background-position: 0px -110px;}
+    to{background-position: -255px -109px;}
+}
+@-webkit-keyframes zero-jump-ascend{
+    from{background-position: 0px -200px;}
+    to{background-position: -580px -180px;}
+
+    40%{
+        top: 110px;
+    }
+
+    50%{
+        top: 105px;
+    }
+
+    80%, 90%{
+        height: 80px;
+    }
+}
+@-webkit-keyframes zero-jump-descend-cont{
+    from{background-position: 0px -274px;}
+    to{background-position: -195px -274px;}
+    30%{
+        top: 105px;
+        height: 80px;
+    }
+    60%{
+        top: 110px;
+        height: 80px;
+    }
+    99%{
+        top: 115px;
+        height: 80px;
+    }
+}
+@-webkit-keyframes zero-jump-descend-fin{
+    from{background-position: 0px -388px;}
+    to{background-position: -255px -388px;}
+}
+@-webkit-keyframes zero-run{
+    from{background-position: -130px -490px;}
+    to{background-position: -1030px -490px;}
+}
+@-webkit-keyframes zero-attack1{
+    from{background-position: 0px -578px;}
+    to{background-position: -1635px -578px;}
+    1%,10%,20%,30%,40%,50%,60%,70%,80%,90%,99%{
+        top: 139px;
+        width: 100px;
+        height: 65px;
+    }
+}
+@-webkit-keyframes zero-dash{
+    from{background-position: 0px -875px;}
+    to{background-position: -710px -875px;}
+}
+@-webkit-keyframes zero-finish{
+    from{background-position: -8px -1141px;}
+    to{background-position: -710px -1141px;}
+    1%,10%,20%, 30%, 40%, 50%, 60%, 70%, 75%, 80%{
+        height: 80px;
+        top: 120px;
+    }
+    90%, 99%{
+        top: 0px;
+    }
+}
+#viewport {
+    background-image: url("../images/bg.png");
+    background-position: -6700px -3px;
+    height: 225px;
+    background-repeat: repeat-x;
+}
+#zero{
+    background-image: url(../images/newSpriteSheet.png);
+    height: 60px;
+    width: 60px;
+    top: 148px;
+    left: 135px;
+    position: absolute;
+    -webkit-animation : zero-ready 2s 0s steps(15, end)1, zero-stand 2s 2s steps(4, end)infinite;
+}
+#beam {
+    background-image: url("../images/beam.png");
+    height: 24px;
+    position: absolute;
+}
